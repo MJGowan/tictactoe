@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Square from '../square/square';
-import Heads from '../../assets/head.png';
 
 export default function Board({xIsNext, squares, onPlay}) {
 
@@ -21,7 +20,7 @@ export default function Board({xIsNext, squares, onPlay}) {
     let status;
     if (winner) {
         status = "Winner: " + winner;
-
+        
     } else {
         status = "Next player: " + (xIsNext ? "X" : "O")
     }
