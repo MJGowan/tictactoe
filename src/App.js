@@ -1,24 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import { Container, Row, Col } from 'react-bootstrap';
+import GameComponent from './components/game/game';
+import background from './assets/tictactoes.jpg';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container style={{
+      backgroundImage: `url(${background})`,
+      backgroundPosition: 'center',
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+      width: '100vw',
+      height: '100vh'
+    }}>
+      <Row>
+        <Col>
+          <br />
+          <h1 className='title'>Tic Tac Toes</h1>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <br />
+          <br />
+          <GameComponent />
+        </Col>
+      </Row>
+    </Container>
   );
 }
 
