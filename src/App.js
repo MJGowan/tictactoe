@@ -1,7 +1,8 @@
 import './App.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import GameComponent from './components/game/game';
-import background from './assets/tictactoes.jpg';
+import background from './assets/kitty.gif';
+import AudioPlayer from './components/audiofile/audiofile';
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
       <Row>
         <Col>
           <br />
-          <h1 className='title'>Tic Tac Toes</h1>
+          <h1 className='title text'>Tic Tac Toes</h1>
+          <AudioPlayer/>
         </Col>
       </Row>
       <Row>

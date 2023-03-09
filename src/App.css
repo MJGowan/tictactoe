@@ -84,6 +84,8 @@ body {
 .status {
   margin-bottom: 10px;
   margin-left:55px;
+  color:rgb(255, 255, 255);
+  font-weight:bold;
 }
 .game {
   display: flex;
@@ -96,5 +98,18 @@ body {
 
 .title{
   margin-left:75px;
-  color:#fff;
+  color:white;
+}
+
+.audio{
+  margin-left: 25px;
+}
+
+.box{
+  box-shadow: 3px 3px 4px #1b1b1b;
+}
+
+.text{
+  /* text-shadow: 3px 3px 4px #242424;   */
+  -webkit-text-stroke: 0.7px rgb(0, 0, 0);
 }

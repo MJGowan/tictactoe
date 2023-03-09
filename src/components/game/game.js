@@ -18,7 +18,7 @@ export default function Game() {
 
     }
 
-    const moves = history.map((squares, move) => {
+    const moves = history.map((move) => {
         let description;
         if (move > 0) {
             description = 'Go to move #' + move;
